@@ -1,0 +1,25 @@
+.navbar {
+    background-color: teal;  /* Teal background for the full navbar */
+    padding: 20px 30px;      /* Increased padding */
+    display: flex;
+    justify-content: center; /* Center align content */
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-content {
+    text-align: center;      /* Center align text */
+  }
+  
+  .navbar h1 {
+    color: white;
+    margin-bottom: 10px;     /* Space between name and slogan */
+    font-size: 2rem;         /* Bigger font */
+  }
+  
+  .slogan {
+    color: white;
+    font-size: 1.2rem;       /* Adjusted size */
+    font-weight: 300;        /* Lighter font */
+    margin: 0;               /* Remove default margin */
+  }
