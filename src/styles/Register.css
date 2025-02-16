@@ -1,169 +1,138 @@
-/* Register.css */
-
-/* Full page styling */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-  }
-  
-  /* Main container */
-  .container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%; /* Increased width */
-    max-width: 950px; /* Adjusted max-width */
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    height: auto;
-    min-height: 75vh; /* Adjusted height */
-    gap: 20px; /* Added spacing between image and form */
-    padding: 20px;
-  }
-  
-  /* Left Section - Image */
-  .image-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #E3F2FD;
-    padding: 15px;
-    border-radius: 12px;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  /* Right Section - Form */
-  .form-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    padding: 30px;
-    min-width: 280px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #444;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-label {
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 8px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.3s;
-    margin-bottom: 12px;
-  }
-  
-  .form-control:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-  }
-  
-  .form-check-label {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  /* Button Styling */
-  .btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
-    width: 100%;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .container-fluid {
-      flex-direction: column;
-      width: 85%;
-      height: auto;
-      min-height: 80vh;
-      padding: 20px;
-    }
-  
-    .image-container, .form-container {
-      width: 100%;
-      height: auto;
-    }
-  
-    .form-container {
-      padding: 25px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .form-container {
-      padding: 20px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
-  
-    .btn {
-      padding: 10px;
-      font-size: 14px;
-    }
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #007BFF;
-    padding: 14px 20px; /* Add some horizontal padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between; /* Space links evenly */
+/* Full-page container */
+.d-flex {
+  display: flex;
 }
 
-.navbar Link {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 15px; /* Add spacing */
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.container-fluid {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #E0F7FA;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centering form and image */
+.row {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sign-up form container */
+.col-md-5 {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #008080;
+  font-weight: bold;
+}
+
+/* Input fields */
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #008080;
+  outline: none;
+}
+
+/* Account type selection */
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+.form-check-label {
+  font-weight: 500;
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  background-color: #008080;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #006666;
+}
+
+/* Image Placeholder */
+.col-md-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .col-md-5 {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .col-md-7 {
+    height: 300px;
+    width: 100%;
+  }
+
+  .img-fluid {
+    height: 100%;
+  }
+
+
 }
