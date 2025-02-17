@@ -1,0 +1,27 @@
+FINAL_PROJECT/
+└── main_page/               # This becomes the single project
+    ├── public/
+    │   ├── index.html
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── recruitment-bg.jpg
+    ├── src/
+    │   ├── components/      # Shared components (Navbar, LoginCard, etc.)
+    │   │   ├── LoginCard.js
+    │   │   ├── Navbar.js
+    │   ├── pages/           # All pages in one place
+    │   │   ├── Login.js
+    │   │   ├── Register.js
+    │   │   ├── CandidatePage.js
+    │   │   ├── RecruiterPage.js
+    │   ├── styles/          # CSS files
+    │   │   ├── Global.css
+    │   │   ├── Login.css
+    │   │   ├── CandidatePage.css
+    │   │   ├── RecruiterPage.css
+    │   ├── App.js
+    │   ├── index.js
+    ├── .gitignore
+    ├── package.json
+    ├── package-lock.json
+    └── README.md

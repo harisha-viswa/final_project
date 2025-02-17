@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "./recruiter.css";
 import * as XLSX from "xlsx";
 
 

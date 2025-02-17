@@ -18,6 +18,9 @@ const Navbar = () => {
           <Link className="btn btn-light" to="/register">
             Register
           </Link>
+          <Link to="/candidate">Candidate</Link> 
+          <Link to="/recruiter">Recruiter</Link>
+
         </div>
       </div>
     </nav>
