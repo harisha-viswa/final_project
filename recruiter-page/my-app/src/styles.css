@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: teal;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; /* Spread items out */
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 5;
+  flex-grow: 1; /* Make the company name take up available space */
+  text-align: center;
+}
+
+/* Profile Icon */
+.profile-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Main Content Layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Welcome Section (Left Side) */
+.welcome-section {
+  flex: 1;
+}
+
+.welcome-section h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.welcome-section p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Create Job Button (Right Side) */
+.create-job {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create-job-btn {
+  background-color: teal;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-job-btn:hover {
+  background-color: #007777;
+}
+
+/* Job Cards Container */
+.job-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Job Card Styling */
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.job-card:hover {
+  transform: scale(1.05);
+}
+
+.job-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: teal;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.job-card p strong {
+  color: #000;
+}
+
+/* Modal */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Ensure it's above other content */
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  width: 350px;  /* Adjust width as needed */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1001; /* Ensure the modal content is above the overlay */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #007777;
+}
+
+/* Modal Content */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Ensure it's above other content */
+  backdrop-filter: blur(5px);  /* Optional: Add blur effect to background */
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  width: 350px;  /* Adjust width as needed */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1001; /* Ensure the modal content is above the overlay */
+  animation: fadeIn 0.3s ease-in-out;
+  max-width: 100%;  /* Make modal responsive */
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #007777;
+}
+
+/* Modal Content */
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Ensure it's above other content */
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1001; /* Ensure the modal content is above the overlay */
+  animation: fadeIn 0.3s ease-in-out;
+  max-width: 100%;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #007777;
+}
+
+/* Job Input Fields */
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: teal;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #007777;
+}
