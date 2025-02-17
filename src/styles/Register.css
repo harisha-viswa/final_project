@@ -1,0 +1,5 @@
+.col-md-5 {
+    min-height: auto;
+    height: auto; /* Make sure the form's height adjusts with content */
+}
+

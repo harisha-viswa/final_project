@@ -100,13 +100,13 @@
   
 /* Apply background image to the entire screen */
 body {
-    background: url("/public/recruitment-bg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden; /* Prevent scrolling */
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    padding: 0;
-  }
+  background: url("/public/recruitment-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
   
   /* Make sure the main container has no solid background */
   .login-container {
