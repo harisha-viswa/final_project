@@ -18,7 +18,7 @@
   .login-card button {
     width: 100%;
     padding: 10px;
-    background-color: #2563eb;
+    background-color:teal;
     color: white;
     border: none;
     border-radius: 20px;
@@ -26,5 +26,5 @@
   }
   
   .login-card button:hover {
-    background-color: #1e40af;
+    background-color:teal;
   }

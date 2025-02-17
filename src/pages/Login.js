@@ -1,18 +1,31 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
-
 import "../styles/Login.css";
 
 const Login = () => {
-  const [formData, setFormData] = useState({ username: "", password: "" });
+  // Separate state for recruiter and candidate login
+  const [recruiterData, setRecruiterData] = useState({ username: "", password: "" });
+  const [candidateData, setCandidateData] = useState({ username: "", password: "" });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  // Handle input change for recruiter
+  const handleRecruiterChange = (e) => {
+    setRecruiterData({ ...recruiterData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  // Handle input change for candidate
+  const handleCandidateChange = (e) => {
+    setCandidateData({ ...candidateData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission separately
+  const handleRecruiterSubmit = (e) => {
     e.preventDefault();
-    console.log("Login Data:", formData);
+    console.log("Recruiter Login Data:", recruiterData);
+  };
+
+  const handleCandidateSubmit = (e) => {
+    e.preventDefault();
+    console.log("Candidate Login Data:", candidateData);
   };
 
   return (
@@ -21,14 +34,14 @@ const Login = () => {
         {/* Recruiter Login Card */}
         <div className="card">
           <h2>Recruiter Login</h2>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleRecruiterSubmit}>
             <input
               type="text"
               name="username"
               className="input-field"
               placeholder="Username"
-              value={formData.username}
-              onChange={handleChange}
+              value={recruiterData.username}
+              onChange={handleRecruiterChange}
               required
             />
             <input
@@ -36,8 +49,8 @@ const Login = () => {
               name="password"
               className="input-field"
               placeholder="Password"
-              value={formData.password}
-              onChange={handleChange}
+              value={recruiterData.password}
+              onChange={handleRecruiterChange}
               required
             />
             <button type="submit" className="login-button">
@@ -49,14 +62,14 @@ const Login = () => {
         {/* Candidate Login Card */}
         <div className="card">
           <h2>Candidate Login</h2>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleCandidateSubmit}>
             <input
               type="text"
               name="username"
               className="input-field"
               placeholder="Username"
-              value={formData.username}
-              onChange={handleChange}
+              value={candidateData.username}
+              onChange={handleCandidateChange}
               required
             />
             <input
@@ -64,8 +77,8 @@ const Login = () => {
               name="password"
               className="input-field"
               placeholder="Password"
-              value={formData.password}
-              onChange={handleChange}
+              value={candidateData.password}
+              onChange={handleCandidateChange}
               required
             />
             <button type="submit" className="login-button">

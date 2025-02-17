@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Register.css";
+//import "../styles/Register.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -125,11 +126,12 @@ const Register = () => {
         {/* Image Placeholder */}
         <div className="col-md-7 d-flex align-items-center justify-content-center border rounded shadow bg-light p-0" style={{ height: "90vh" }}>
         <img
-        src="C:\Users\haris\Downloads\homepage-main\public\assets\background.jpg"
-        alt="Signup Illustration"
-        className="img-fluid"
-        style={{ width: "100%", height: "100vh", objectFit: "cover",borderRadius: "8px" }} 
-      />
+  src="/assets/background.jpg" // Correct relative path
+  alt="Signup Illustration"
+  className="img-fluid"
+  style={{ width: "100%", height: "100vh", objectFit: "cover", borderRadius: "8px" }} 
+/>
+
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/LoginCard.css";  // Import CSS
-
+//import "bootstrap/dist/css/bootstrap.min.css";
 const LoginCard = ({ title }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
