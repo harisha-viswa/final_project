@@ -3,7 +3,10 @@ import "./recruiter.css";
 import * as XLSX from "xlsx";
 
 
+
+
 const RecruiterPage = () => {
+  
     const [showModal, setShowModal] = useState(false);
     const [jobId, setJobId] = useState(0);
     const [jobRole, setJobRole] = useState("");
@@ -74,12 +77,13 @@ const RecruiterPage = () => {
         // Generate and download the Excel file
         XLSX.writeFile(wb, "jobs.xlsx");
     };
+
+   
     
     return (
         <div className="recruiter-container">
             <nav className="navbar">
-                <h2>Solutions</h2>
-                <div className="profile-icon">👤</div>
+            <div className="profile-icon">👤</div>
             </nav>
 
             <div className="content">
@@ -170,4 +174,4 @@ const RecruiterPage = () => {
     );
 };
 
-export default RecruiterPage;
+export default RecruiterPage; 

@@ -112,7 +112,7 @@ const CandidatePage = () => {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-        <h1 className="logo">Solutions</h1>
+      
         <div className="profile">
           <FaUserCircle size={28} />
           <span>{candidateName}</span>
