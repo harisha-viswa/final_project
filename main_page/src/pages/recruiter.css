@@ -10,17 +10,13 @@ body {
 .navbar {
   background-color: teal;
   color: white;
-  padding: 15px 20px;
+  padding: 8px 20px; /* Thinner padding */
   display: flex;
-  justify-content: space-between; /* Spread items out */
+  justify-content: flex-end; /* Align items to the right */
   align-items: center;
 }
 
-.navbar h2 {
-  margin: 5;
-  flex-grow: 1; /* Make the company name take up available space */
-  text-align: center;
-}
+
 
 /* Profile Icon */
 .profile-icon {
