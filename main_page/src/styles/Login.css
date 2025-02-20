@@ -100,7 +100,7 @@
   
 /* Apply background image to the entire screen */
 body {
-  background: url("/public/recruitment-bg.jpg") no-repeat center center fixed;
+  background: url("../assets/recruitment-bg.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh; /* Full viewport height */
   margin: 0;
