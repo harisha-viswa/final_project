@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "C:/Users/haris/final_project/main_page/src/pages/CandidatePage.css";
+import "./CandidatePage.css";
+
 import { FaUserCircle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5"; // Import close
 import * as XLSX from "xlsx"; // Import xlsx
